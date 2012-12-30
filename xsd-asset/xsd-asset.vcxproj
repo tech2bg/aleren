@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\xsd-base\xsd-base.vcxproj">
+      <Project>{fdc122b1-8c1d-41d8-b1da-e856cebd46b3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\xsd-core\xsd-core.vcxproj">
+      <Project>{d78d156c-1307-4d4d-9423-73ada6bb7272}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\xsd-math\xsd-math.vcxproj">
+      <Project>{3c110581-4a0b-43f5-b103-77f8511523fa}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="all.h">
+      <DependentUpon>all.xsd</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="all.hxx" />
+    <ClInclude Include="asset.hxx" />
+    <ClInclude Include="bond.hxx" />
+    <ClInclude Include="calendar.hxx" />
+    <ClInclude Include="cashflow.hxx" />
+    <ClInclude Include="cdswap.hxx" />
+    <ClInclude Include="commodity.hxx" />
+    <ClInclude Include="convention.hxx" />
+    <ClInclude Include="daycount.hxx" />
+    <ClInclude Include="deal.hxx" />
+    <ClInclude Include="enums.hxx" />
+    <ClInclude Include="equity.hxx" />
+    <ClInclude Include="event.hxx" />
+    <ClInclude Include="expression.hxx" />
+    <ClInclude Include="forward.hxx" />
+    <ClInclude Include="index.hxx" />
+    <ClInclude Include="leasepool.hxx" />
+    <ClInclude Include="obligor.hxx" />
+    <ClInclude Include="option.hxx" />
+    <ClInclude Include="portfolio.hxx" />
+    <ClInclude Include="schedule.hxx" />
+    <ClInclude Include="swap.hxx" />
+    <ClInclude Include="tranche.hxx" />
+    <ClInclude Include="types.hxx" />
+    <ClInclude Include="valerian.hxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="all.ixx" />
+    <None Include="asset.ixx" />
+    <None Include="bond.ixx" />
+    <None Include="calendar.ixx" />
+    <None Include="cashflow.ixx" />
+    <None Include="cdswap.ixx" />
+    <None Include="commodity.ixx" />
+    <None Include="convention.ixx" />
+    <None Include="daycount.ixx" />
+    <None Include="deal.ixx" />
+    <None Include="enums.ixx" />
+    <None Include="equity.ixx" />
+    <None Include="event.ixx" />
+    <None Include="expression.ixx" />
+    <None Include="forward.ixx" />
+    <None Include="index.ixx" />
+    <None Include="leasepool.ixx" />
+    <None Include="obligor.ixx" />
+    <None Include="option.ixx" />
+    <None Include="portfolio.ixx" />
+    <None Include="schedule.ixx" />
+    <None Include="swap.ixx" />
+    <None Include="tranche.ixx" />
+    <None Include="types.ixx" />
+    <None Include="valerian.ixx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="all.cxx" />
+    <ClCompile Include="asset.cxx" />
+    <ClCompile Include="bond.cxx" />
+    <ClCompile Include="calendar.cxx" />
+    <ClCompile Include="cashflow.cxx" />
+    <ClCompile Include="cdswap.cxx" />
+    <ClCompile Include="commodity.cxx" />
+    <ClCompile Include="convention.cxx" />
+    <ClCompile Include="daycount.cxx" />
+    <ClCompile Include="deal.cxx" />
+    <ClCompile Include="enums.cxx" />
+    <ClCompile Include="equity.cxx" />
+    <ClCompile Include="event.cxx" />
+    <ClCompile Include="expression.cxx" />
+    <ClCompile Include="forward.cxx" />
+    <ClCompile Include="index.cxx" />
+    <ClCompile Include="leasepool.cxx" />
+    <ClCompile Include="obligor.cxx" />
+    <ClCompile Include="option.cxx" />
+    <ClCompile Include="portfolio.cxx" />
+    <ClCompile Include="schedule.cxx" />
+    <ClCompile Include="swap.cxx" />
+    <ClCompile Include="tranche.cxx" />
+    <ClCompile Include="types.cxx" />
+    <ClCompile Include="valerian.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\all.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\asset.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\bond.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\calendar.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\cashflow.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\cdswap.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\commodity.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\convention.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\daycount.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\deal.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\enums.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\equity.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\event.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\expression.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\forward.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\index.xsd">
+      <SubType>Designer</SubType>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\leasepool.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\obligor.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\option.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\portfolio.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\schedule.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\swap.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\tranche.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\types.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\valerian.xsd" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{53B60827-889B-40EC-8710-5B1C441E2A78}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>xsdasset</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="..\..\3rd_party_libs\CodeSynthesis\CodeSynthesis_3_3\etc\vc-10.0\xsd-cxx-tree.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../3rd_party_libs/boost/boost_1_51;../xsd-base;../../3rd_party_libs/CodeSynthesis/CodeSynthesis_3_3/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>false</CompileAsManaged>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DisableSpecificWarnings>4996;4244</DisableSpecificWarnings>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <CXX_Tree_Mapping_Rule>
+      <PolymorphicTypeAll>false</PolymorphicTypeAll>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule>
+      <GenOstream>true</GenOstream>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule>
+      <PolymorphicType>XsdBaseSchema;XsdResult</PolymorphicType>
+      <GenIntellisense>true</GenIntellisense>
+    </CXX_Tree_Mapping_Rule>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../3rd_party_libs/boost/boost_1_51;../xsd-base;../../3rd_party_libs/CodeSynthesis/CodeSynthesis_3_3/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>false</CompileAsManaged>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DisableSpecificWarnings>4996;4244</DisableSpecificWarnings>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <CXX_Tree_Mapping_Rule>
+      <GenOstream>true</GenOstream>
+      <PolymorphicType>XsdBaseSchema;XsdResult</PolymorphicType>
+    </CXX_Tree_Mapping_Rule>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\..\3rd_party_libs\CodeSynthesis\CodeSynthesis_3_3\etc\vc-10.0\xsd-cxx-tree.targets" />
+  </ImportGroup>
+</Project>

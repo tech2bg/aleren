@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cxx">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="hxx">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ixx">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="schemas">
+      <UniqueIdentifier>{92f9ba06-9a8a-41ed-bc9d-7716a4d09970}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="all.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="asset.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="bond.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="calendar.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="cashflow.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="cdswap.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="commodity.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="convention.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="daycount.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="deal.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="enums.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="equity.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="expression.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="forward.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="index.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="leasepool.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="obligor.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="option.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="portfolio.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="schedule.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="swap.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="tranche.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="types.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="valerian.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="event.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="all.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="asset.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="bond.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="calendar.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="cashflow.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="cdswap.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="commodity.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="convention.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="daycount.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="deal.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="enums.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="equity.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="expression.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="forward.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="index.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="leasepool.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="obligor.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="option.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="portfolio.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="schedule.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="swap.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="tranche.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="types.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="valerian.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="event.ixx">
+      <Filter>ixx</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="all.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="asset.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="bond.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="calendar.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="cashflow.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="cdswap.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="commodity.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="convention.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="daycount.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="deal.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="enums.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="equity.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="expression.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="forward.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="index.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="leasepool.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="obligor.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="option.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="portfolio.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="schedule.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="swap.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="tranche.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="types.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="valerian.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="event.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\all.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\asset.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\bond.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\calendar.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\cashflow.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\cdswap.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\commodity.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\convention.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\daycount.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\deal.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\enums.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\equity.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\expression.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\forward.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\index.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\leasepool.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\obligor.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\option.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\portfolio.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\schedule.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\swap.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\tranche.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\types.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\valerian.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-asset\event.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+  </ItemGroup>
+</Project>

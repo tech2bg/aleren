@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D78D156C-1307-4D4D-9423-73ADA6BB7272}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>xsdcore</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="..\..\3rd_party_libs\CodeSynthesis\CodeSynthesis_3_3\etc\vc-10.0\xsd-cxx-tree.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../3rd_party_libs/boost/boost_1_51;../xsd-base;../../3rd_party_libs/CodeSynthesis/CodeSynthesis_3_3/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4996;6326</DisableSpecificWarnings>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <ShowIncludes>false</ShowIncludes>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <CXX_Tree_Mapping_Rule>
+      <GenOstream>true</GenOstream>
+      <AdditionalOptions>--extern-xml-schema xml-schema.xsd --generate-insertion boost::archive::binary_oarchive  --generate-extraction  boost::archive::binary_iarchive --cxx-prologue "#include \"precompiled.h\"" %(AdditionalOptions)</AdditionalOptions>
+      <GenIntellisense>true</GenIntellisense>
+      <HxxPrologue>
+      </HxxPrologue>
+      <PolymorphicTypeAll>false</PolymorphicTypeAll>
+      <PolymorphicType>XsdBaseSchema;XsdResult</PolymorphicType>
+      <GenPolymorphic>true</GenPolymorphic>
+    </CXX_Tree_Mapping_Rule>
+    <PreBuildEvent>
+      <Command>xsd.exe cxx-tree --generate-xml-schema --generate-serialization --generate-comparison --generate-from-base-ctor --generate-default-ctor --generate-insertion dummy_arg --generate-extraction dummy_arg --custom-type date_time --custom-type date --hxx-prologue ^"^#include \"xml-schema-prologue.hxx\"" --hxx-epilogue "^#include \"xml-schema-custom.hxx\"" xml-schema.xsd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../3rd_party_libs/boost/boost_1_50_0;../xsd-base;../../3rd_party_libs/CodeSynthesis/CodeSynthesis_3_3/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4996;6326</DisableSpecificWarnings>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <CXX_Tree_Mapping_Rule>
+      <PolymorphicTypeAll>false</PolymorphicTypeAll>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule>
+      <GenOstream>true</GenOstream>
+      <PolymorphicType>XsdBaseSchema;XsdResult</PolymorphicType>
+    </CXX_Tree_Mapping_Rule>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="all.hxx" />
+    <ClInclude Include="array.hxx" />
+    <ClInclude Include="bounds.hxx" />
+    <ClInclude Include="enums.hxx" />
+    <ClInclude Include="input.hxx" />
+    <ClInclude Include="matrix.hxx" />
+    <ClInclude Include="output.hxx" />
+    <ClInclude Include="result.hxx" />
+    <ClInclude Include="series.hxx" />
+    <ClInclude Include="types.hxx" />
+    <ClInclude Include="value.hxx" />
+    <ClInclude Include="vector.hxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="all.cxx" />
+    <ClCompile Include="array.cxx" />
+    <ClCompile Include="bounds.cxx" />
+    <ClCompile Include="enums.cxx" />
+    <ClCompile Include="input.cxx" />
+    <ClCompile Include="matrix.cxx" />
+    <ClCompile Include="output.cxx" />
+    <ClCompile Include="result.cxx" />
+    <ClCompile Include="series.cxx" />
+    <ClCompile Include="types.cxx" />
+    <ClCompile Include="value.cxx" />
+    <ClCompile Include="vector.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="all.ixx" />
+    <None Include="array.ixx" />
+    <None Include="bounds.ixx" />
+    <None Include="enums.ixx" />
+    <None Include="input.ixx" />
+    <None Include="matrix.ixx" />
+    <None Include="output.ixx" />
+    <None Include="result.ixx" />
+    <None Include="series.ixx" />
+    <None Include="types.ixx" />
+    <None Include="value.ixx" />
+    <None Include="vector.ixx" />
+  </ItemGroup>
+  <ItemGroup>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\all.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\array.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\bounds.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\enums.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\input.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\matrix.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\output.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\result.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\series.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\types.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\value.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\vector.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\xsd-base\xsd-base.vcxproj">
+      <Project>{fdc122b1-8c1d-41d8-b1da-e856cebd46b3}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\..\3rd_party_libs\CodeSynthesis\CodeSynthesis_3_3\etc\vc-10.0\xsd-cxx-tree.targets" />
+  </ImportGroup>
+</Project>

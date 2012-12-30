@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="hxx">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ixx">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="cxx">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="schemas">
+      <UniqueIdentifier>{03ff31fa-7d56-4ebf-b24d-e974ec3e2197}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="asset-calc.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="all.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="bond-calc.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="cdswap-calc.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="discount.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="enums.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="expected-loss.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="fxrates.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="hazard.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="index-calc.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="inflation.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="leasecalc.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="leasemodel.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="market.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="model.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="option-calc.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="process.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="recovery.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="scenario.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="swap-calc.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="term-structure.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="types.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="valerian.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="volatility.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="asset-calc.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="all.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="bond-calc.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="cdswap-calc.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="discount.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="enums.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="expected-loss.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="fxrates.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="hazard.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="index-calc.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="inflation.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="leasecalc.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="leasemodel.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="market.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="model.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="option-calc.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="process.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="recovery.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="scenario.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="swap-calc.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="term-structure.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="types.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="valerian.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="volatility.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="asset-calc.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="all.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="bond-calc.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="cdswap-calc.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="discount.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="enums.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="expected-loss.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="fxrates.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="hazard.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="index-calc.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="inflation.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="leasecalc.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="leasemodel.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="market.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="model.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="option-calc.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="process.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="recovery.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="scenario.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="swap-calc.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="term-structure.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="types.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="valerian.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="volatility.ixx">
+      <Filter>ixx</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\all.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\asset-calc.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\bond-calc.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\cdswap-calc.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\discount.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\enums.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\expected-loss.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\fxrates.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\hazard.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\index-calc.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\inflation.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\leasecalc.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\leasemodel.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\market.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\model.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\option-calc.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\process.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\recovery.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\scenario.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\swap-calc.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\term-structure.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\types.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\valerian.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-model\volatility.xsd">
+      <Filter>schemas</Filter>
+    </CXX_Tree_Mapping_Rule>
+  </ItemGroup>
+</Project>

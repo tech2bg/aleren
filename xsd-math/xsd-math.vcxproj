@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3C110581-4A0B-43F5-B103-77F8511523FA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>xsdmath</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="..\..\3rd_party_libs\CodeSynthesis\CodeSynthesis_3_3\etc\vc-10.0\xsd-cxx-tree.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../3rd_party_libs/boost/boost_1_51;../../3rd_party_libs/CodeSynthesis/CodeSynthesis_3_3/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4996</DisableSpecificWarnings>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <CXX_Tree_Mapping_Rule>
+      <GenOstream>true</GenOstream>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule>
+      <GenIntellisense>true</GenIntellisense>
+      <PolymorphicTypeAll>false</PolymorphicTypeAll>
+      <PolymorphicType>XsdBaseSchema;XsdResult</PolymorphicType>
+    </CXX_Tree_Mapping_Rule>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4244;4996</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>../../3rd_party_libs/boost/boost_1_50_0;../../3rd_party_libs/CodeSynthesis/CodeSynthesis_3_3/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <CXX_Tree_Mapping_Rule>
+      <GenOstream>true</GenOstream>
+      <GenIntellisense>true</GenIntellisense>
+      <PolymorphicType>XsdBaseSchema;XsdResult</PolymorphicType>
+      <PolymorphicTypeAll>false</PolymorphicTypeAll>
+    </CXX_Tree_Mapping_Rule>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\xsd-core\xsd-core.vcxproj">
+      <Project>{d78d156c-1307-4d4d-9423-73ada6bb7272}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\all.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\axis.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\constraint.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\copula.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\curve.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\distribution-1D.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\distribution.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\enums.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\functional.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\interpolation.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\linear-algebra.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\markov.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\minimize.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\ode.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\parameters.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\quadrature.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\random.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\root.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\solver.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\stochastic.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\surface.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\transform.xsd" />
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\types.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="all.hxx" />
+    <ClInclude Include="axis.hxx" />
+    <ClInclude Include="constraint.hxx" />
+    <ClInclude Include="copula.hxx" />
+    <ClInclude Include="curve.hxx" />
+    <ClInclude Include="distribution-1D.hxx" />
+    <ClInclude Include="distribution.hxx" />
+    <ClInclude Include="enums.hxx" />
+    <ClInclude Include="functional.hxx" />
+    <ClInclude Include="interpolation.hxx" />
+    <ClInclude Include="linear-algebra.hxx" />
+    <ClInclude Include="markov.hxx" />
+    <ClInclude Include="minimize.hxx" />
+    <ClInclude Include="ode.hxx" />
+    <ClInclude Include="parameters.hxx" />
+    <ClInclude Include="quadrature.hxx" />
+    <ClInclude Include="random.hxx" />
+    <ClInclude Include="root.hxx" />
+    <ClInclude Include="solver.hxx" />
+    <ClInclude Include="stochastic.hxx" />
+    <ClInclude Include="surface.hxx" />
+    <ClInclude Include="transform.hxx" />
+    <ClInclude Include="types.hxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="all.ixx" />
+    <None Include="axis.ixx" />
+    <None Include="constraint.ixx" />
+    <None Include="copula.ixx" />
+    <None Include="curve.ixx" />
+    <None Include="distribution-1D.ixx" />
+    <None Include="distribution.ixx" />
+    <None Include="enums.ixx" />
+    <None Include="functional.ixx" />
+    <None Include="interpolation.ixx" />
+    <None Include="linear-algebra.ixx" />
+    <None Include="markov.ixx" />
+    <None Include="minimize.ixx" />
+    <None Include="ode.ixx" />
+    <None Include="parameters.ixx" />
+    <None Include="quadrature.ixx" />
+    <None Include="random.ixx" />
+    <None Include="root.ixx" />
+    <None Include="solver.ixx" />
+    <None Include="stochastic.ixx" />
+    <None Include="surface.ixx" />
+    <None Include="transform.ixx" />
+    <None Include="types.ixx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="all.cxx" />
+    <ClCompile Include="axis.cxx" />
+    <ClCompile Include="constraint.cxx" />
+    <ClCompile Include="copula.cxx" />
+    <ClCompile Include="curve.cxx" />
+    <ClCompile Include="distribution-1D.cxx" />
+    <ClCompile Include="distribution.cxx" />
+    <ClCompile Include="enums.cxx" />
+    <ClCompile Include="functional.cxx" />
+    <ClCompile Include="interpolation.cxx" />
+    <ClCompile Include="linear-algebra.cxx" />
+    <ClCompile Include="markov.cxx" />
+    <ClCompile Include="minimize.cxx" />
+    <ClCompile Include="ode.cxx" />
+    <ClCompile Include="parameters.cxx" />
+    <ClCompile Include="quadrature.cxx" />
+    <ClCompile Include="random.cxx" />
+    <ClCompile Include="root.cxx" />
+    <ClCompile Include="solver.cxx" />
+    <ClCompile Include="stochastic.cxx" />
+    <ClCompile Include="surface.cxx" />
+    <ClCompile Include="transform.cxx" />
+    <ClCompile Include="types.cxx" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\..\3rd_party_libs\CodeSynthesis\CodeSynthesis_3_3\etc\vc-10.0\xsd-cxx-tree.targets" />
+  </ImportGroup>
+</Project>

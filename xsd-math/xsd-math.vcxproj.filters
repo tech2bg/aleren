@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="hxx">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ixx">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="cxx">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="schema">
+      <UniqueIdentifier>{e02e64b3-f0b7-43e1-930a-6f15dd3212b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\all.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\axis.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\constraint.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\copula.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\curve.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\distribution.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\enums.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\functional.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\interpolation.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\linear-algebra.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\markov.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\minimize.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\ode.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\parameters.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\quadrature.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\random.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\root.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\solver.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\stochastic.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\surface.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\transform.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\types.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-math\distribution-1D.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="all.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="axis.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="copula.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="curve.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="distribution.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="enums.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="functional.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="interpolation.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="linear-algebra.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="markov.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="minimize.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="ode.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="parameters.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="quadrature.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="random.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="root.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="solver.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="stochastic.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="surface.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="transform.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="types.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="distribution-1D.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="all.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="axis.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="constraint.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="copula.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="curve.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="distribution.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="enums.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="functional.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="interpolation.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="linear-algebra.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="markov.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="minimize.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="ode.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="parameters.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="quadrature.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="random.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="root.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="solver.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="stochastic.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="surface.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="transform.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="types.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="distribution-1D.ixx">
+      <Filter>ixx</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="all.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="axis.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="constraint.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="copula.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="curve.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="distribution.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="enums.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="functional.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="interpolation.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="linear-algebra.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="markov.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="minimize.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="ode.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="parameters.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="quadrature.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="random.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="root.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="solver.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="stochastic.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="surface.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="transform.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="types.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="distribution-1D.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

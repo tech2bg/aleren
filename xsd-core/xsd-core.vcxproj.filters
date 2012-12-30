@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="hxx">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="cxx">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ixx">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="schema">
+      <UniqueIdentifier>{148471aa-bfef-4c42-9008-804959364ece}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="all.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="array.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="bounds.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="enums.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="input.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="series.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="types.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="value.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="result.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="output.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix.hxx">
+      <Filter>hxx</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="all.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="array.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="bounds.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="enums.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="series.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="types.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="value.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="result.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="output.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="vector.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="matrix.cxx">
+      <Filter>cxx</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="all.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="array.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="bounds.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="enums.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="input.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="series.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="types.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="value.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="result.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="output.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="vector.ixx">
+      <Filter>ixx</Filter>
+    </None>
+    <None Include="matrix.ixx">
+      <Filter>ixx</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\all.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\array.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\bounds.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\enums.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\input.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\output.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\result.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\series.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\types.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\value.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\vector.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+    <CXX_Tree_Mapping_Rule Include="..\schema\xsd-core\matrix.xsd">
+      <Filter>schema</Filter>
+    </CXX_Tree_Mapping_Rule>
+  </ItemGroup>
+</Project>
